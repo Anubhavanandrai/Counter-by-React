@@ -1,0 +1,36 @@
+import { useState } from 'react';
+import {setState} from 'react';
+
+function Counter(){
+
+const[start, setStart]=useState(0);
+
+function Add(){
+setStart(start+10);
+}
+
+function Sub(){
+    setStart(start-10);
+    }
+
+    return(
+<>
+
+<h3>Total Contract Value</h3>
+
+
+<button onClick={Add}>
+    +
+</button>
+
+
+<button onClick={Sub}>
+    -
+</button>
+<h3>Total Value={start}</h3>
+
+</>
+
+    );
+}
+export {Counter};
